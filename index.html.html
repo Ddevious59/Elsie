@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love Letter</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: pink;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        #letter {
+            display: none;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+        }
+        .heart {
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button onclick="openLetter()">💌 Open My Love Letter</button>
+        <div id="letter">
+            <p>Elsie,</p>
+            <p>Im so happy to have met someone as beautiful, compassionate and as kind as you.I really really like you.<br>I wanna live like this forever.Just you and me<br>Just us<br>
+                from Bollin💖</p>
+            <p class="heart">❤️❤️❤️</p>
+        </div>
+    </div>
+
+    <script>
+        function openLetter() {
+            document.getElementById("letter").style.display = "block";
+        }
+    </script>
+</body>
+</html>
